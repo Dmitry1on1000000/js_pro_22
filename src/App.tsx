@@ -15,7 +15,7 @@ function App() {
       <CounterComponent title={'Apple'} count={4} />
       <CounterComponent title={'Lemon'} />
 
-      <button onClick={handler}>PUSH ME</button>
+    <button onClick={handler}>PUSH ME</button>
 
       <Input />
 
