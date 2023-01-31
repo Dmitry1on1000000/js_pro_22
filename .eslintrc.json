@@ -23,6 +23,8 @@
         "@typescript-eslint/space-before-function-paren": "off",
         "@typescript-eslint/comma-dangle": "off",
         "@typescript-eslint/consistent-type-definitions": "off",
-        "@typescript-eslint/member-delimiter-style": "off"
+        "@typescript-eslint/member-delimiter-style": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "multiline-ternary": "off"
     }
 }
