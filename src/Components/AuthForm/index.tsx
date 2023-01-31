@@ -1,10 +1,14 @@
 import { Input } from 'Components/Common/Input';
 import React, { ChangeEvent, useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { UserSliceActions } from 'Store';
 import style from './AuthForm.module.scss';
 
 export const AuthForm = () => {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [errorMessage, setErrorMessage] = useState('');
+
+  const dispatch = useDispatch();
 
   const changeHandler =
     (fieldName: 'email' | 'password') => (event: ChangeEvent<HTMLInputElement>) => {
@@ -20,6 +24,12 @@ export const AuthForm = () => {
       setErrorMessage('пароль слишком короткий');
     } else {
       setErrorMessage('');
+      dispatch(UserSliceActions.setUserLoading(true));
+
+      setTimeout(
+        () => dispatch(UserSliceActions.setUserData({ email: formState.email, token: '123' })),
+        3000,
+      );
       console.log(formState, 'отправленно на сервер');
     }
   };

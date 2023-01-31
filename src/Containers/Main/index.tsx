@@ -1,4 +1,3 @@
-import { PageWrapper } from 'Components/Common/PageWrapper';
 import { MainContent } from 'Components/MainContent';
 import React, { useEffect } from 'react';
 
@@ -11,9 +10,5 @@ export const Main = () => {
     return () => console.log('Main UNMOUNT');
   }, []);
 
-  return (
-    <PageWrapper>
-      <MainContent />
-    </PageWrapper>
-  );
+  return <MainContent />;
 };

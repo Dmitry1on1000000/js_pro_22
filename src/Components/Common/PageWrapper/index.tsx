@@ -1,17 +1,16 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import { Footer } from '../Footer';
 import { Header } from '../Header';
 import style from './PageWrapper.module.scss';
 
-type PageWrapperProps = {
-  children: React.ReactNode;
-};
-
-export const PageWrapper = ({ children }: PageWrapperProps) => {
+export const PageWrapper = () => {
   return (
     <div className={style.page_wrapper}>
       <Header />
-      {children}
+      <main className={style.content}>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-import { PageWrapper } from 'Components/Common/PageWrapper';
+import { CheckAuth } from 'Components/Common/CheckAuth';
 import { PostsList } from 'Components/PostsList';
 import React, { useEffect } from 'react';
 
@@ -17,8 +17,8 @@ export const Posts = () => {
   }, []);
 
   return (
-    <PageWrapper>
+    <CheckAuth>
       <PostsList />
-    </PageWrapper>
+    </CheckAuth>
   );
 };
