@@ -1,0 +1,21 @@
+.header {
+    height: 60px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #6470db;
+
+&__logo{
+    color:rgb(26, 240, 37);
+    font-size: 20px;
+
+}
+ &__title{
+    color:chocolate;
+    
+
+}
+
+}
+

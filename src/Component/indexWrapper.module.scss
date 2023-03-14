@@ -1,0 +1,24 @@
+.indexWrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid red;
+width: 500px;
+height: 100px;
+padding: 0 16px;
+border-radius: 12px;
+}
+
+.counterWrapper{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+    width: 30px;
+     height: 30px;
+    
+
+ }
