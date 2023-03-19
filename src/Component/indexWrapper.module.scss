@@ -1,12 +1,16 @@
 .indexWrapper{
-display: flex;
+ display: flex;
+ 
 justify-content: space-between;
 align-items: center;
-border: 1px solid red;
+
+background: linear-gradient( 170deg, #070707e3, rgba(220, 210, 236, 0.39), #c4bfbf2c);
 width: 500px;
 height: 100px;
 padding: 0 16px;
 border-radius: 12px;
+ box-shadow: 16px 20px 10px rgba(0, 0, 0, 0.521);
+
 }
 
 .counterWrapper{
@@ -14,11 +18,14 @@ border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .img{
-    width: 30px;
-     height: 30px;
+    width: 70px;
+     height: 70px;
+     border-radius: 50% 15%;
+     box-shadow: 8px -7px 10px rgba(5, 5, 5, 0.521);
     
 
  }

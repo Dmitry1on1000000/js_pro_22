@@ -1,8 +1,15 @@
 .wrapper {
-  height: 40px;
+  height: 160px;
   text-align: center;
-  background-color: #9ab4a4;
+  background-color:rgba(32, 32, 32, 0.8);
   color: black;
+
+ 
+  height: 100px;
+
+  background-repeat: no-repeat;
+  background-position: center -260px;
+  background-size: cover;
 
   &__text {
     font-size: 25px;

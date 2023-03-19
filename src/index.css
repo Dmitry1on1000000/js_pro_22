@@ -4,8 +4,4 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.page_wrapper {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 60px auto 60px;
-}
+

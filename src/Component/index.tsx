@@ -4,10 +4,12 @@ import style from './indexWrapper.module.scss';
 type CounterPropsType = {
   title: string;
   count?: number;
+  ImgSrc?: string;
 };
 
 export const Component = (props: CounterPropsType) => {
   const { title } = props;
+  const { ImgSrc } = props;
   const [count, setCount] = useState(0);
   const incrementHandler = () => {
     setCount((prev) => prev + 1);
@@ -19,7 +21,8 @@ export const Component = (props: CounterPropsType) => {
     <div className={style.indexWrapper}>
       <h1>{title}</h1>
       <div className={style.counterWrapper}>
-        <img className={style.img} src={'dumbbells.jpg'}/>
+        {/* <img className={style.img} src={'dumbbells.jpg'} /> */}
+        <img className={style.img} src={ImgSrc} />
         <button disabled={count === 0} onClick={decrementHandler}>
           Remove
         </button>
