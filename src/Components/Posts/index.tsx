@@ -14,7 +14,7 @@ export const PostsList = () => {
       <p>Post5</p>
       <p>Post6</p>
       <p>Post7</p>
-      <Link to={routes.main}>go to main</Link>
+      <Link className={style.wrapper__Link} to={routes.main}>go to main</Link>
     </main>
   );
 };

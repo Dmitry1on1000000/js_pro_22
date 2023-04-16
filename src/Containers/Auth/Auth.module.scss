@@ -1,0 +1,14 @@
+.Loading{
+color: red;
+ 
+ 
+   @keyframes pulsate {
+     50% {color: #fafafa; text-shadow: 0 -1px rgba(240, 238, 238, 0.3), 0 0 5px #ffd, 0 0 8px #fff;}
+ }
+  animation: pulsate 1.2s linear infinite;
+   
+position:relative;
+top:340px;
+left: 900px;
+
+}

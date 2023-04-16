@@ -1,7 +1,31 @@
 .wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items:center
-   
-     };
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+
+  &__Link {
+    color: #a6e6e2;
+    margin-top: 310px;
+    border-radius: 3px;
+    text-decoration: none;
+    background: linear-gradient(#5a5657, #070707b7);
+    box-shadow: inset #2292ee 0 -1px 1px, inset 0 1px 1px #a6e6e2, #1b1b1b 0 0 0 1px,
+      rgba(0, 0, 0, 0.3) 0 2px 5px;
+
+    @-webkit-keyframes pulsate {
+      50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(238, 233, 233, 0.89), 0 0 5px #ffd, 0 0 8px #fff;
+      }
+    }
+    @keyframes pulsate {
+      50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(248, 240, 240, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+      }
+    }
+    animation: pulsate 1.2s linear infinite;
+  }
+}

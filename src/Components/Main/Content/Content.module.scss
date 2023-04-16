@@ -1,13 +1,32 @@
 .content {
-    
+
 display: flex;
 justify-content: center;
 align-items:center;
 height: 100vh;
 flex-direction: column;
 gap: 10px;
-border: 3px rgb(13, 136, 167) solid;
+  border: 3px rgb(13, 136, 167) solid;
+  margin-top: 140px;
+  
+  
 
+  &__Link{
+    color: #a6e6e2;
+margin-top: 700px;
+border-radius: 3px;
+text-decoration: none;
+background: linear-gradient(#5a5657, #070707b7);
+box-shadow: inset #2292ee 0 -1px 1px, inset 0 1px 1px #a6e6e2, #1b1b1b 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+  
+  @-webkit-keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(238, 233, 233, 0.89), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+  @keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(248, 240, 240, 0.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+  animation: pulsate 1.2s linear infinite;
+  }
 }
 .block{
     top: 200px;
@@ -16,12 +35,13 @@ border: 3px rgb(13, 136, 167) solid;
     display: flex;
 justify-content: flex-start;
 align-items:center;
-height: 83.7vh;
+height: 90.6vh;
 flex-direction: column;
-gap: 60px;
+gap: 80px;
+border: 1px red solid;
 
 &__text{
-
+margin-top: 60px;
 color: rgb(29, 28, 28,0.8);
 text-shadow:  3px 3px 20px #272727,
 -2px 1px 30px #615f60;

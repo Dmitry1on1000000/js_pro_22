@@ -15,7 +15,7 @@ export const Content = () => {
         <Component title="Ball" ImgSrc={'ball.jpg'} />
         <Component title="Sandbag" ImgSrc={'Sandbag.jpg'} />
       </div>
-      <Link to={routes.posts}>go to posts</Link>
+      <Link className={style.content__Link} to={routes.posts}>Занятия </Link>
     </main>
   );
 };
