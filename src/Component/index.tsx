@@ -19,7 +19,12 @@ export const Component = (props: CounterPropsType) => {
   };
   return (
     <div className={style.indexWrapper}>
-      <h1>{title}</h1>
+      <div className={style.Cart}>
+        <h1>{title}</h1>
+        <button className={style.addToCart} onClick={() => alert('Товар добавлен в корзину!')}>
+          Добавить в корзину
+        </button>
+      </div>
       <div className={style.counterWrapper}>
         {/* <img className={style.img} src={'dumbbells.jpg'} /> */}
         <img className={style.img} src={ImgSrc} />

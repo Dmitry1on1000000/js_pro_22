@@ -9,15 +9,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-   
+
   &__logo,
-  a {
-   
+  .a {
     color: rgb(255, 255, 255);
     font-size: 20px;
     text-decoration: none;
     position: relative;
-    
   }
   @keyframes move {
     from {
@@ -26,10 +24,9 @@
       box-shadow: 0px 20px 20px rgb(248, 14, 14);
     }
 
-   
-    30%{
-        top: -55px;
-        background: linear-gradient(90deg, rgb(129, 44, 97) 10%, rgba(6, 238, 255, 0.5) 100%);
+    30% {
+      top: -55px;
+      background: linear-gradient(90deg, rgb(129, 44, 97) 10%, rgba(6, 238, 255, 0.5) 100%);
     }
     to {
       top: -75px;
@@ -39,11 +36,10 @@
     }
   }
   button {
-    
     height: 20px;
     width: 250px;
     position: absolute;
-    animation: move 5s infinite ease-in-out ;
+    animation: move 5s infinite ease-in-out;
     transition-duration: 2000ms;
     background-color: rgb(165, 165, 165);
     cursor: pointer;
@@ -51,13 +47,56 @@
     border-color: rgba(107, 206, 245, 0.801);
     border-radius: 10px;
     top: -76px;
-    
   }
- 
+
   h1 {
     color: red;
   }
 }
-.name{
+.name {
   color: red;
+}
+
+
+.link {
+  font-size: 24px;
+  color: red;
+  text-decoration: none;
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    opacity: 0; /* задаем прозрачность */
+  }
+  50% {
+    transform: rotate(180deg);
+    content: url('../../../../public/chicken-chicken-bro.gif');
+    width: 50px;
+    height: 50px;
+    opacity: 1; /* задаем прозрачность */
+  }
+  70% {
+    transform: rotate(250deg);
+    content: url('../../../../public/chicken-chicken-bro.gif');
+    width: 70px;
+    height: 70px;
+    opacity: 2; /* задаем прозрачность */
+  }
+  90% {
+    transform: rotate(360deg);
+    content: url('../../../../public/chicken-chicken-bro.gif');
+    width: 100px;
+    height: 100px;
+    opacity: 3; /* задаем прозрачность */
+  }
+  to {
+    transform: rotate(360deg);
+    content: url('../../../../public/chicken-chicken-bro.gif');
+    width: 100px;
+    height: 100px;
+    opacity: 4; /* задаем прозрачность */
+    
+  }
 }

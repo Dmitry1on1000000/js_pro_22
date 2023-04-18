@@ -1,57 +1,71 @@
 .content {
 
-display: flex;
-justify-content: center;
-align-items:center;
-height: 100vh;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 10px;
   border: 3px rgb(13, 136, 167) solid;
   margin-top: 140px;
-  
-  
 
-  &__Link{
+  &__Link {
     color: #a6e6e2;
-margin-top: 700px;
-border-radius: 3px;
-text-decoration: none;
-background: linear-gradient(#5a5657, #070707b7);
-box-shadow: inset #2292ee 0 -1px 1px, inset 0 1px 1px #a6e6e2, #1b1b1b 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+    margin-top: 700px;
+    border-radius: 3px;
+    text-decoration: none;
+    background: linear-gradient(#5a5657, #070707b7);
+    box-shadow: inset #2292ee 0 -1px 1px, inset 0 1px 1px #a6e6e2, #1b1b1b 0 0 0 1px,
+      rgba(0, 0, 0, 0.3) 0 2px 5px;
+
+    @-webkit-keyframes pulsate {
+      50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(238, 233, 233, 0.89), 0 0 5px #ffd, 0 0 8px #fff;
+      }
+    }
+    @keyframes pulsate {
+      50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(248, 240, 240, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+      }
+    }
+    animation: pulsate 1.2s linear infinite;
+  }
+}
+.block {
+  top: 200px;
+  left: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 80px;
+  border: 2px red solid;
+
+  &__text {
+    margin-top: 60px;
+    color: rgb(29, 28, 28, 0.8);
+    text-shadow: 3px 3px 20px #272727, -2px 1px 30px #615f60;
+    font-family: Arial, Helvetica, sans-serif;
+
+    span {
+      color: rgb(50, 59, 71);
+      font-family: italic;
+      text-shadow: 7px 3px 10px rgb(50, 59, 71);
+    }
+  }
+}
+.timer{
+font-size: 26px;
+font-style: italic;
+font-weight: 400;
+position: absolute;
+top:174px;
+right: 3px;
+}
+.button{
   
-  @-webkit-keyframes pulsate {
-    50% {color: #fff; text-shadow: 0 -1px rgba(238, 233, 233, 0.89), 0 0 5px #ffd, 0 0 8px #fff;}
-  }
-  @keyframes pulsate {
-    50% {color: #fff; text-shadow: 0 -1px rgba(248, 240, 240, 0.3), 0 0 5px #ffd, 0 0 8px #fff;}
-  }
-  animation: pulsate 1.2s linear infinite;
-  }
-}
-.block{
-    top: 200px;
-    left: 5px;
-    position: absolute;
-    display: flex;
-justify-content: flex-start;
-align-items:center;
-height: 90.6vh;
-flex-direction: column;
-gap: 80px;
-border: 1px red solid;
-
-&__text{
-margin-top: 60px;
-color: rgb(29, 28, 28,0.8);
-text-shadow:  3px 3px 20px #272727,
--2px 1px 30px #615f60;
-font-family:  Arial, Helvetica, sans-serif;
-
-span{
-    color: rgb(50, 59, 71);
-     font-family: italic;
-     text-shadow:  7px 3px 10px rgb(50, 59, 71),
-}
-
-}
 }
